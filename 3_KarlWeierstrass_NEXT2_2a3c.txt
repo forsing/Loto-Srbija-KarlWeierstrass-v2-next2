@@ -3,8 +3,8 @@
 
 KORAK 1: Weierstrass-ova funkcija nad svih izvucenih kombinacija
 
-  CSV izvucenih:        /Users/4c/Desktop/GHQ/data/loto7_4624_k43.csv
-  Ucitano izvlacenja:    4624
+  CSV izvucenih:        /data/loto7_4624_k43.csv
+  Ucitano izvlacenja:   4624
   C(39,7):              15,380,937
   f(t) = lex-indeks izvucene kombinacije u skupu svih 39C7
 
@@ -13,7 +13,7 @@ KORAK 1: Weierstrass-ova funkcija nad svih izvucenih kombinacija
 KORAK 2a3c: Aparat 2a Brownovo kretanje + Test 3c Mutual Information
 ============================================================
 
-  PNG:                  /Users/4c/Desktop/GHQ/KarlWeierstrass/3_KarlWeierstrass_NEXT2_2a3c.png
+  PNG:                  /3_KarlWeierstrass_NEXT2_2a3c.png
 
 Mutual Information nad centriranim Brown inkrementima:
   max lag               = 60
@@ -70,13 +70,13 @@ Parametri:
 Glavna prognoza:
   pred. lex float        = 2,192,513.20138889
   pred. lex              = 2,192,513
-  pred. kombinacija      = (1, 10, 12, 15, 16, 32, 39)
+  pred. kombinacija      = (1, x, 12, y, 16, z, 39)
 
 Kvantil kandidati iz uslovne distribucije:
          q                dX           lex  kombinacija
       0.10-6,463,217.30000000             1  (1, 2, 3, 4, 5, 6, 7)
-      0.501,409,167.50000000     1,922,282  (1, 8, 11, 21, 22, 25, 32)
-      0.756,284,021.50000000     6,797,136  (3, 13, 23, 24, 29, 30, 37)
-      0.909,223,870.40000000     9,736,984  (5, 13, 16, 28, 29, 35, 37)
+      0.501,409,167.50000000     1,922,282  (1, x, 11, y, 22, z, 32)
+      0.756,284,021.50000000     6,797,136  (3, x, 23, y, 29, z, 37)
+      0.909,223,870.40000000     9,736,984  (5, x, 16, y, 29, z, 37)
 
 Vreme PREDIKCIJE 2: 0:00:00 (0.0 s)
