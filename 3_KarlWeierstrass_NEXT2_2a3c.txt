@@ -1,0 +1,82 @@
+3_KarlWeierstrass_NEXT2_2a3c — Brownovo kretanje + Mutual Information (POGODNO)
+============================================================
+
+KORAK 1: Weierstrass-ova funkcija nad svih izvucenih kombinacija
+
+  CSV izvucenih:        /Users/4c/Desktop/GHQ/data/loto7_4624_k43.csv
+  Ucitano izvlacenja:    4624
+  C(39,7):              15,380,937
+  f(t) = lex-indeks izvucene kombinacije u skupu svih 39C7
+
+
+============================================================
+KORAK 2a3c: Aparat 2a Brownovo kretanje + Test 3c Mutual Information
+============================================================
+
+  PNG:                  /Users/4c/Desktop/GHQ/KarlWeierstrass/3_KarlWeierstrass_NEXT2_2a3c.png
+
+Mutual Information nad centriranim Brown inkrementima:
+  max lag               = 60
+  bins                  = 16
+  max MI                = 0.26369680 bits
+  max MI lag            = 1
+
+Shuffled max MI referenca:
+  runs                  = 200
+  mean                  = 0.04400159
+  std                   = 0.00186236
+  z                     = 117.96616578
+  p(shuffled >= obs)    = 0.00000000
+  interpret.            = postoji MI signal iznad shuffled Brown reference
+
+Top 10 MI lagova:
+  lag            MI [bits]
+  1             0.26369680
+  18            0.04664867
+  52            0.04522129
+  45            0.04478672
+  2             0.04417223
+  55            0.04300646
+  29            0.04102786
+  58            0.04095282
+  25            0.04000016
+  56            0.03984017
+
+Vreme KORAKA 2a3c: 0:00:03 (4.0 s)
+Ukupno vreme:       0:00:03 (4.0 s)
+
+============================================================
+PREDIKCIJA 2: NEXT2 / 2a3c / MI / uslovna distribucija inkremenata
+============================================================
+
+Model:
+  MI je najjaci na lag=1.
+  Trenutni centrirani dX se stavlja u kvantil-bin.
+  Predikcija koristi istorijske sledece dX vrednosti iz istog bina.
+
+Parametri:
+  max MI lag             = 1
+  max MI                = 0.26369680 bits
+  bins                  = 16
+  zadnji bin             = 5
+  broj prelaza           = 288
+  mean(dX)               = -2,003.26238373
+  zadnji lex             = 513,114
+  zadnji inkrement       = -2,143,496.00000000
+  pred. centrirani dX    = 1,681,402.46377262
+  pred. inkrement        = 1,679,399.20138889
+  napomena               = koristi se uslovna distribucija sledeceg dX iz istog kvantil-bina
+
+Glavna prognoza:
+  pred. lex float        = 2,192,513.20138889
+  pred. lex              = 2,192,513
+  pred. kombinacija      = (1, 10, 12, 15, 16, 32, 39)
+
+Kvantil kandidati iz uslovne distribucije:
+         q                dX           lex  kombinacija
+      0.10-6,463,217.30000000             1  (1, 2, 3, 4, 5, 6, 7)
+      0.501,409,167.50000000     1,922,282  (1, 8, 11, 21, 22, 25, 32)
+      0.756,284,021.50000000     6,797,136  (3, 13, 23, 24, 29, 30, 37)
+      0.909,223,870.40000000     9,736,984  (5, 13, 16, 28, 29, 35, 37)
+
+Vreme PREDIKCIJE 2: 0:00:00 (0.0 s)
