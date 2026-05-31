@@ -26,7 +26,7 @@ import numpy as np
 
 T0 = time.time()
 
-CSV_DRAWS = "/Users/4c/Desktop/GHQ/data/loto7_4624_k43.csv"
+CSV_DRAWS = "/data/loto7_4624_k43.csv"
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PNG_PATH = os.path.join(HERE, "3_KarlWeierstrass_NEXT2_2a3c.png")
@@ -428,7 +428,7 @@ PREDIKCIJA 2 — NEXT2 / 2a3c / MI / uslovna distribucija inkremenata
   zadnji inkrement       = -2,143,496.00
   pred. inkrement        = 1,679,399.20
   pred. lex              = 2,192,513
-  pred. kombinacija      = (1, 10, 12, 15, 16, 32, 39)
+  pred. kombinacija      = (1, x, 12, y, 16, x, 39)
   napomena               = koristi se uslovna distribucija sledeceg dX iz istog kvantil-bina
   kvantil kandidati:
     q=0.10  dX= -6,463,217.30  lex=         1  combo=(1, 2, 3, 4, 5, 6, 7)
